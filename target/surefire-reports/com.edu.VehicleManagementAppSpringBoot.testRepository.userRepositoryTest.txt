@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! - in com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest
+saveUserTest  Time elapsed: 0.04 s  <<< ERROR!
+javax.validation.ConstraintViolationException: 
+Validation failed for classes [com.edu.VehicleManagementAppSpringBoot.entity.User] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=password, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Contact number can't be Empty', propertyPath=contactNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='Contact number can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=lastName, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Password can't be Empty', propertyPath=password, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='Password can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=address, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=contactNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Address can't be Empty', propertyPath=address, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='Address can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='nationality can't be Empty', propertyPath=nationality, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='nationality can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=licenceNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=gender, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=nationality, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be blank', propertyPath=gender, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Last name can't be Empty', propertyPath=lastName, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='Last name can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='Email can't be Empty', propertyPath=email, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='Email can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=email, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=firstName, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='First name can't be Empty', propertyPath=firstName, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='First name can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='License number can't be Empty', propertyPath=licenceNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.User, messageTemplate='License number can't be Empty'}
+]
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest.saveUserTest(userRepositoryTest.java:29)
+
+updateUserTest  Time elapsed: 0.016 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest.updateUserTest(userRepositoryTest.java:51)
+
+getUserTest  Time elapsed: 0.02 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest.getUserTest(userRepositoryTest.java:37)
+
+deleteUserTest  Time elapsed: 0.014 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.userRepositoryTest.deleteUserTest(userRepositoryTest.java:61)
+

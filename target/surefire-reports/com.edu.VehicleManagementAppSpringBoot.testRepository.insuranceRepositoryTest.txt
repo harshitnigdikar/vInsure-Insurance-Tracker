@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 6.514 s <<< FAILURE! - in com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest
+saveInsuranceTest  Time elapsed: 0.414 s  <<< ERROR!
+javax.validation.ConstraintViolationException: 
+Validation failed for classes [com.edu.VehicleManagementAppSpringBoot.entity.Insurance] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Insurance Provider can't be Empty', propertyPath=insuranceProvider, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='Insurance Provider can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='Insurance validity can't be Empty', propertyPath=insuranceValidity, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='Insurance validity can't be Empty'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=insuranceProvider, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=insuranceValidity, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=insuranceNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Insurance number can't be Empty', propertyPath=insuranceNumber, rootBeanClass=class com.edu.VehicleManagementAppSpringBoot.entity.Insurance, messageTemplate='Insurance number can't be Empty'}
+]
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest.saveInsuranceTest(insuranceRepositoryTest.java:32)
+
+getInsuarnceTest  Time elapsed: 0.03 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest.getInsuarnceTest(insuranceRepositoryTest.java:40)
+
+getInsuranceListTest  Time elapsed: 0.107 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  0
+to be greater than:
+  0
+
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest.getInsuranceListTest(insuranceRepositoryTest.java:48)
+
+updateInsuranceTest  Time elapsed: 0.009 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest.updateInsuranceTest(insuranceRepositoryTest.java:54)
+
+deleteUserTest  Time elapsed: 0.01 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.edu.VehicleManagementAppSpringBoot.testRepository.insuranceRepositoryTest.deleteUserTest(insuranceRepositoryTest.java:64)
+
